@@ -49,7 +49,7 @@
         </p>
         <p class="blog-date">
           <!-- created_at部分 下で変更します -->
-          <%= @blog.category %>
+          <%= @blog.created_at %>
           <!-- created_at部分 ここまで -->
         </p>
       </div>
@@ -60,7 +60,7 @@
         <!-- body部分 ここまで -->
       </p>
       <%= link_to "編集", edit_blog_path(@blog) %>
-      <%= link_to "排除", blog_path, method: :delete %>
+      <%= link_to "排除", blog_path(@blog), method: :delete %>
       <div class="author-case">
         <div class="author-image"></div>
         <div class="author-box">
